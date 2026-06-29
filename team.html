@@ -376,87 +376,7 @@
     <!-- rts team area end -->
 
     <!-- rts footer area start -->
-    <footer class="rts-footer-area">
-        <span class="heading-title">Newsletter</span>
-        <div class="container">
-            <div class="footer-newsletter-area">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="newsletter-content">
-                            <h2 class="title rts-slide-anim">Sign Up To Our Newsletter</h2>
-                            <p class="desc">Subscribe to our Newsletter & Event right now to be updates</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="newsletter-form">
-                            <input type="email" placeholder="Email Address*">
-                            <button type="submit" class="btn-subs">
-                                Subscribe Now
-                                <span><i class="fa-solid fa-arrow-right"></i></span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-widget-area">
-                <div class="footer-widget-content">
-                    <a href="index.html" class="logo"><img src="assets/images/logo/logo.svg" alt=""></a>
-                    <p class="desc">Our consulting services encompass a broad range, including strategic planning,
-                        operational efficiency...</p>
-                    <ul class="social-list">
-                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-behance"></i></a></li>
-                    </ul>
-                </div>
-                <div class="single-widget">
-                    <h3 class="widget-title">What We Do</h3>
-                    <ul class="widget-list">
-                        <li><a href="about.html"><i class="fa-light fa-arrow-right"></i> About Us</a></li>
-                        <li><a href="project.html"><i class="fa-light fa-arrow-right"></i> Portfolio</a></li>
-                        <li><a href="#"><i class="fa-light fa-arrow-right"></i> Testimonials</a></li>
-                        <li><a href="blog.html"><i class="fa-light fa-arrow-right"></i> Blog</a></li>
-                        <li><a href="contact.html"><i class="fa-light fa-arrow-right"></i> Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="single-widget">
-                    <h3 class="widget-title">Quick Links</h3>
-                    <ul class="widget-list">
-                        <li><a href="service-details.html"><i class="fa-light fa-arrow-right"></i> Market Analysis</a></li>
-                        <li><a href="service-details.html"><i class="fa-light fa-arrow-right"></i> Strategic Roadmap</a></li>
-                        <li><a href="service-details.html"><i class="fa-light fa-arrow-right"></i> Financial Planning</a></li>
-                        <li><a href="service-details.html"><i class="fa-light fa-arrow-right"></i> Risk Management</a></li>
-                        <li><a href="service-details.html"><i class="fa-light fa-arrow-right"></i> Talent Acquisition</a></li>
-                    </ul>
-                </div>
-                <div class="single-widget">
-                    <h3 class="widget-title">Company Address</h3>
-                    <ul class="widget-info-list">
-                        <li><span class="icon"><i class="fa-regular fa-phone-volume"></i></span><a href="tel:+25836548325684"> Market Analysis</a></li>
-                        <li><span class="icon"><i class="fa-regular fa-envelope"></i></span><a href="mailto:help-bigzen@support.com">help-bigzen@support.com</a></li>
-                        <li><span class="icon"><i class="fa-regular fa-clock"></i></span><a href="#">8:00am - 17:00pm</a>
-                        </li>
-                        <li><span class="icon"><i class="fa-regular fa-location-dot"></i></span><a href="#">Molan Avenue DY Block, 58H <br> Berlin, Germany.</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-copyright-area">
-                <div class="border-line"></div>
-                <div class="copy-menu-area">
-                    <p class="copyright">Copyright © Bigzen. All rights received
-                        <script>
-                            document.write(new Date().getFullYear());
-                        </script>
-                    </p>
-                    <ul class="footer-condition">
-                        <li><a href="#">Terms of Use</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <div id="footer"></div>
     <!-- rts footer area end -->
     <!-- rts back to top area start -->
     <div class="rts-back-to-top">
@@ -487,6 +407,13 @@
     <script defer src="assets/js/vendor/wow.js"></script>
     <script defer src="assets/js/vendor/contact.form.js"></script>
     <script defer src="assets/js/main.js"></script>
+    <script>
+        fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById("footer").innerHTML = data;
+    });
+    </script>
 </body>
 
 </html>

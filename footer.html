@@ -1,0 +1,320 @@
+<footer class="rts-footer-area">
+
+<style>
+/* ================= GLOBAL FOOTER RESET & CANVAS ================= */
+.rts-footer-area {
+    background: #ffffff !important;
+    color: #1e293b !important;
+    padding: 50px 0 25px 0 !important; /* Significantly reduced top/bottom padding */
+    font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+    position: relative;
+    z-index: 10;
+    border-top: 1px solid #f1f5f9;
+}
+
+.rts-footer-area * {
+    box-sizing: border-box;
+}
+
+/* ================= BRAND COLUMN DETAILS ================= */
+.footer-widget-content .logo img {
+    height: 42px;
+    width: auto;
+    margin-bottom: 16px; /* Reduced spacing */
+    display: block;
+}
+
+.footer-widget-content .desc {
+    color: #64748b;
+    line-height: 1.6;
+    font-size: 14px;
+    margin-bottom: 20px; /* Reduced spacing */
+}
+
+/* ================= COMPACT HEADERS ================= */
+.single-widget .widget-title-container {
+    margin-bottom: 18px !important; /* Reduced vertical gap to titles */
+    padding: 0 !important;
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.single-widget h3.widget-title-text {
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    color: #0f2557 !important;
+    margin: 0 !important;
+    padding: 0 0 8px 0 !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.2px;
+}
+
+/* Custom interactive line system */
+.single-widget .widget-title-container::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 35px;
+    height: 3px;
+    background: #0056f3;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+.single-widget:hover .widget-title-container::after {
+    width: 55px;
+}
+
+.single-widget .widget-title-container::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1.5px;
+    width: 6px;
+    height: 6px;
+    background: #0056f3;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+/* ================= INTERACTIVE NAVIGATION LINKS ================= */
+.widget-list,
+.widget-info-list,
+.social-list {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.widget-list li {
+    margin-bottom: 10px !important; /* Tighter item spacing */
+}
+
+.widget-list a {
+    color: #475569;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.widget-list a::before {
+    content: '→';
+    position: absolute;
+    left: -12px;
+    opacity: 0;
+    color: #0056f3;
+    transition: all 0.25s ease;
+}
+
+.widget-list a:hover {
+    color: #0056f3;
+    transform: translateX(14px);
+}
+
+.widget-list a:hover::before {
+    opacity: 1;
+}
+
+/* ================= CONTACT PANEL FEATURES ================= */
+.widget-info-list li {
+    margin-bottom: 12px !important; /* Tighter line breaks */
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 12px !important;
+    line-height: 1.4;
+    color: #475569;
+    font-size: 14px;
+}
+
+.widget-info-list i {
+    font-size: 14px;
+    color: #0056f3;
+    width: 18px;
+    margin-top: 2px;
+    text-align: center;
+    background: #f0f7ff;
+    padding: 6px;
+    border-radius: 6px;
+    box-sizing: content-box;
+}
+
+.widget-info-list a {
+    color: #475569;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.widget-info-list a:hover {
+    color: #0056f3;
+}
+
+/* ================= SOCIAL BRANDING GROUP ================= */
+.social-list {
+    display: flex !important;
+    gap: 10px !important;
+}
+
+.social-list a {
+    display: block;
+    width: 36px;
+    height: 36px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    text-align: center;
+    line-height: 34px;
+    border-radius: 50%;
+    color: #64748b;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.social-list a.linkedin:hover { background: #0077b5; color: #ffffff; border-color: #0077b5; transform: translateY(-3px); }
+.social-list a.facebook:hover { background: #1877f2; color: #ffffff; border-color: #1877f2; transform: translateY(-3px); }
+.social-list a.whatsapp:hover { background: #25d366; color: #ffffff; border-color: #25d366; transform: translateY(-3px); }
+.social-list a.instagram:hover { background: linear-gradient(45deg, #fdf497 0%, #fd5949 45%,#d6249f 60%,#285AEB 90%); color: #ffffff; transform: translateY(-3px); }
+
+/* ================= BOTTOM CREDITS AREA ================= */
+.footer-copyright-area {
+    margin-top: 35px; /* Drastically reduced space above copyright */
+    padding-top: 20px;
+    border-top: 1px  solid #f1f5f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: #64748b;
+}
+
+.footer-copyright-area p {
+    margin: 0 !important;
+}
+
+.footer-condition {
+    display: flex !important;
+    gap: 20px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.footer-condition li {
+    list-style: none !important;
+}
+
+.footer-condition a {
+    color: #64748b;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-condition a:hover {
+    color: #0056f3;
+}
+
+/* ================= COMPACT MOBILE FIXES ================= */
+@media (max-width: 768px) {
+    .footer-copyright-area {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+}
+</style>
+
+<div class="container-fluid" style="max-width: 1320px; padding: 0 24px;"> <div class="row g-4 justify-content-between"> <div class="col-xl-4 col-lg-4 col-md-12">
+            <div class="footer-widget-content">
+                <a href="index.html" class="logo">
+                    <!-- <img src="assets/images/logo/logo.webp" -->
+                    <img src="assets/images/logo/logo2.png"
+                        alt="Prajai Logo"
+                        width="200"
+                        height="80">
+                </a>
+                <p class="desc">
+                    Prajai Technology is a trusted Prajai ERP solutions provider helping businesses streamline operations with expert consulting, implementation, customization, and support services.
+                </p>
+                <ul class="social-list">
+                    <li><a href="#" class="linkedin" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="#" class="facebook" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#" class="whatsapp" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    <li><a href="#" class="instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
+            <div class="single-widget">
+                <div class="widget-title-container">
+                    <h3 class="widget-title-text">Our Services</h3>
+                </div>
+                <ul class="widget-list">
+                    <li><a href="#">Prajai Consulting</a></li>
+                    <li><a href="#">Prajai Implementation</a></li>
+                    <li><a href="#">Prajai Support</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
+            <div class="single-widget">
+                <div class="widget-title-container">
+                    <h3 class="widget-title-text">Quick Links</h3>
+                </div>
+                <ul class="widget-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Industries</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12">
+            <div class="single-widget">
+                <div class="widget-title-container">
+                    <h3 class="widget-title-text">Contact Us</h3>
+                </div>
+                <ul class="widget-info-list">
+                    <li>
+                        <i class="fa-light fa-location-dot"></i>
+                        <span>2nd Floor, Vayaluran Towers,<br>RS Puram Clock Tower, Coimbatore,<br>Tamil Nadu - 641002</span>
+                    </li>
+                    <li>
+                        <i class="fa-light fa-clock"></i>
+                        <span>9:00 AM - 7:00 PM</span>
+                    </li>
+                    <li>
+                        <i class="fa-light fa-phone"></i>
+                        <a href="tel:+919363608990">+91 93636 08990</a>
+                    </li>
+                    <li>
+                        <i class="fa-light fa-envelope"></i>
+                        <a href="mailto:info@prajai.com">info@prajai.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-copyright-area">
+        <p class="copyright">
+            Copyright © by Prajai Technology <script>document.write(new Date().getFullYear());</script>
+        </p>
+        <ul class="footer-condition">
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+    </div>
+
+</div>
+
+</footer>
