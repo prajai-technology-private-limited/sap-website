@@ -752,6 +752,10 @@
     <script defer src="assets/js/vendor/wow.js"></script>
     <script defer src="assets/js/vendor/contact.form.js"></script>
     <script defer src="assets/js/main.js"></script>
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
     <script>
 document.addEventListener("DOMContentLoaded", function () {
     fetch("navbar.html")
@@ -769,5 +773,30 @@ document.addEventListener("DOMContentLoaded", function () {
         .catch(error => console.error("Navbar loading error:", error));
 });
 </script>
+<<<<<<< Updated upstream
 </body>
+=======
+<script>
+fetch("footer.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("footer").innerHTML = data;
+  });
+</script>
+
+</body>
+
+
+            // Reinitialize mobile menu if required by template
+            if (typeof $ !== "undefined") {
+                $(".rts-mobile-menu-active").each(function () {
+                    $(this).metisMenu();
+                });
+            }
+        })
+        .catch(error => console.error("Navbar loading error:", error));
+});
+</script>
+</body>
+>>>>>>> Stashed changes
 </html>
