@@ -571,3 +571,31 @@
     });
   });
 })(jQuery, window);
+
+/*==========================================
+=        Load Common Navbar
+==========================================*/
+
+$(function () {
+    const $navbar = $("#navbar-container");
+
+    if ($navbar.length) {
+        $navbar.load("navbar.html", function (response, status) {
+
+            if (status === "error") {
+                console.error("Failed to load navbar.html");
+                return;
+            }
+
+            // Initialize MetisMenu after navbar is loaded
+            if ($.fn.metisMenu) {
+                $(".main-nav-area").metisMenu();
+            }
+
+            // Reinitialize any other plugins if needed
+            if (typeof WOW !== "undefined") {
+                new WOW().init();
+            }
+        });
+    }
+});
