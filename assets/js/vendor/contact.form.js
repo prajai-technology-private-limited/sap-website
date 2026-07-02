@@ -26,27 +26,24 @@
         $.ajax({
             type: 'POST',
             url: $(form).attr('action'),
-            data: formData
+            data: formData,
+            dataType: 'json'
         })
             .done(function (response) {
-                // Make sure that the formMessages div has the 'success' class.
                 $(formMessages).removeClass('error');
                 $(formMessages).addClass('success');
 
-                // Set the message text.
-                $(formMessages).text(response);
+                $(formMessages).text(response.message || 'Message sent successfully.');
 
                 // Clear the form.
-                $('#name, #email, #query, #message').val('');
+                $('#name, #company, #email, #phone, #subject, #service, #message').val('');
             })
             .fail(function (data) {
-                // Make sure that the formMessages div has the 'error' class.
                 $(formMessages).removeClass('success');
                 $(formMessages).addClass('error');
 
-                // Set the message text.
-                if (data.responseText !== '') {
-                    $(formMessages).text(data.responseText);
+                if (data.responseJSON && data.responseJSON.message) {
+                    $(formMessages).text(data.responseJSON.message);
                 } else {
                     $(formMessages).text('Oops! An error occured and your message could not be sent.');
                 }

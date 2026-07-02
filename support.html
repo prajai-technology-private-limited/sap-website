@@ -3,7 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAP Application Management Support (AMS) & System Support | Prajai</title>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="description" content="Prajai Technology | SAP Solutions & Software Development Company in Coimbatore">
+    <meta name="keywords" content="SAP, S/4HANA, ERP Solutions, Software Development, Prajai Technology, Coimbatore">
+    <meta name="robots" content="index, follow">
+    <!-- for open graph social media -->
+    <meta property="og:title" content="SAP Support Services | Prajai Technology">
+    <meta property="og:description" content="Prajai Technology | SAP Solutions & Software Development Company in Coimbatore">
+    <!-- for twitter sharing -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SAP Support Services | Prajai Technology">
+    <meta name="twitter:description" content="Prajai Technology | SAP Solutions & Software Development Company in Coimbatore">
+    <!-- favicon -->
+    <link rel="icon" href="assets/images/prajai/favicon.png" type="image/x-icon">
+    <title>SAP Support Services | Prajai Technology</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -431,7 +444,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="template-card">
                         <div class="template-card-img-wrapper">
-                            <img src="assets/images/services/sap-ams.jpg" alt="SAP Application Management Support">
+                            <img loading="lazy" src="assets/images/services/sap-ams.jpg" alt="SAP Application Management Support">
                         </div>
                         <h4>SAP AMS (Application Management Support)</h4>
                         <p>Keep your entire landscape running at its best. Our dedicated AMS team provides proactive maintenance, ongoing optimizations, and minor enhancements to ensure your core modules remain secure and aligned with business goals.</p>
@@ -441,7 +454,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="template-card">
                         <div class="template-card-img-wrapper">
-                            <img src="assets/images/services/system-support.jpg" alt="SAP L1, L2, L3 Support">
+                            <img loading="lazy" src="assets/images/services/system-support.jpg" alt="SAP L1, L2, L3 Support">
                         </div>
                         <h4>Multi-Level System Support (L1, L2, L3)</h4>
                         <p>From day-to-day user management queries to intricate technical core anomalies, our structural multi-tier desk delivers SLA-driven remediation, ensuring that global workspaces remain productive and uninterrupted.</p>
@@ -451,7 +464,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="template-card">
                         <div class="template-card-img-wrapper">
-                            <img src="assets/images/services/migration-support.jpg" alt="SAP Migration Support">
+                            <img loading="lazy" src="assets/images/services/migration-support.jpg" alt="SAP Migration Support">
                         </div>
                         <h4>SAP Migration Support</h4>
                         <p>Transition your enterprise datasets with structural confidence. Whether executing major system version transitions or migrating workloads to secure hyperscale cloud rings, our engineers manage minimal downtimes with complete data integrity.</p>
@@ -461,7 +474,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="template-card">
                         <div class="template-card-img-wrapper">
-                            <img src="assets/images/services/upgrade-support.jpg" alt="SAP Upgrade & Enhancement Support">
+                            <img loading="lazy" src="assets/images/services/upgrade-support.jpg" alt="SAP Upgrade & Enhancement Support">
                         </div>
                         <h4>SAP Upgrade & Enhancement Support</h4>
                         <p>Stay current and continuously competitive. We manage complex version upgrades, EhP rollouts, and functional add-on deployments so your operational lines instantly benefit from fresh security patches and performance baselines.</p>
@@ -471,7 +484,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="template-card">
                         <div class="template-card-img-wrapper">
-                            <img src="assets/images/services/optimization.jpg" alt="SAP Performance Optimization">
+                            <img loading="lazy" src="assets/images/services/optimization.jpg" alt="SAP Performance Optimization">
                         </div>
                         <h4>SAP Performance Optimization</h4>
                         <p>Lagging environments drag down productivity. Our optimization engineers trace transaction execution paths, analyze heavy database operations, locate code bottlenecks, and execute targeted fine-tuning maneuvers.</p>
@@ -481,7 +494,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="template-card">
                         <div class="template-card-img-wrapper">
-                            <img src="assets/images/services/monitoring.jpg" alt="SAP Issue Resolution & Monitoring">
+                            <img loading="lazy" src="assets/images/services/monitoring.jpg" alt="SAP Issue Resolution & Monitoring">
                         </div>
                         <h4>Issue Resolution & Live Monitoring</h4>
                         <p>Prevention safeguards infrastructure. We continuously scan your background ecosystem health metrics, capturing minor operational irregularities before they can escalate into larger issues, guaranteeing total business continuity.</p>
@@ -554,27 +567,29 @@
 
     <div id="footer-container"></div>
 
-    <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        fetch("navbar.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("navbar-container").innerHTML = data;
-                if (typeof $ !== "undefined") {
-                    $(".rts-mobile-menu-active").each(function () {
-                        $(this).metisMenu();
-                    });
-                }
-            })
-            .catch(error => console.error("Error loading header:", error));
-
-        fetch("footer.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("footer-container").innerHTML = data;
-            })
-            .catch(error => console.error("Error loading footer:", error));
-    });
-    </script>
+        <!-- Core Dynamic Component Scripts -->
+    <script defer src="assets/js/vendor/jquery.min.js"></script>
+    <script defer src="assets/js/plugins/bootstrap.min.js"></script>
+    <script defer src="assets/js/plugins/swiper.js"></script>
+    <script defer src="assets/js/plugins/isotop.js"></script>
+    <script defer src="assets/js/plugins/gsap.js"></script>
+    <script defer src="assets/js/plugins/split-text.js"></script>
+    <script defer src="assets/js/plugins/scroll-trigger.js"></script>
+    <script defer src="assets/js/plugins/smooth-scroll.js"></script>
+    <script defer src="assets/js/plugins/counterup.js"></script>
+    <script defer src="assets/js/vendor/jquery-ui.js"></script>
+    <script defer src="assets/js/vendor/magnifying-popup.js"></script>
+    <script defer src="assets/js/vendor/metismenu.js"></script>
+    <script defer src="assets/js/vendor/jarallax.js"></script>
+    <script defer src="assets/js/vendor/waypoints.js"></script>
+    <script defer src="assets/js/vendor/wow.js"></script>
+    <script defer src="assets/js/vendor/contact.form.js"></script>
+    <script defer src="assets/js/main.js"></script>
+    <script defer src="assets/js/footer.js"></script>
+<script defer src="assets/js/navbar.js"></script>
 </body>
 </html>
+
+
+
+

@@ -3,7 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAP S/4 HANA Digital Strategy & Transformation | Prajai</title>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="description" content="Prajai Technology | SAP Solutions & Software Development Company in Coimbatore">
+    <meta name="keywords" content="SAP, S/4HANA, ERP Solutions, Software Development, Prajai Technology, Coimbatore">
+    <meta name="robots" content="index, follow">
+    <!-- for open graph social media -->
+    <meta property="og:title" content="SAP S/4HANA Digital Strategy | Prajai Technology">
+    <meta property="og:description" content="Prajai Technology | SAP Solutions & Software Development Company in Coimbatore">
+    <!-- for twitter sharing -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SAP S/4HANA Digital Strategy | Prajai Technology">
+    <meta name="twitter:description" content="Prajai Technology | SAP Solutions & Software Development Company in Coimbatore">
+    <!-- favicon -->
+    <link rel="icon" href="assets/images/prajai/favicon.png" type="image/x-icon">
+    <title>SAP S/4HANA Digital Strategy | Prajai Technology</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -17,19 +30,19 @@
            PREMIUM DESIGN SYSTEM & VARIABLES
         ========================================== */
         :root {
-            --brand-primary: #2f5bea;
-            --brand-secondary: #00d4ff;
-            --brand-gradient: linear-gradient(135deg, #2f5bea 0%, #00d4ff 100%);
-            --dark-surface: #0b132a; /* Deep luxury navy for headers */
-            --body-text: #4e5d78;    /* Professional slate-indigo for balanced legibility */
-            --bg-light: #faf8ff;
-            --bg-card: #ffffff;
-            --border-color: rgba(47, 91, 234, 0.08);
+            --brand-primary: var(--color-primary, #3358D3);
+            --brand-secondary: var(--color-info, #1BA2DB);
+            --brand-gradient: linear-gradient(135deg, var(--color-primary, #3358D3) 0%, var(--color-info, #1BA2DB) 100%);
+            --dark-surface: var(--color-heading, #1D1D1E);
+            --body-text: var(--color-body, #868689);
+            --bg-light: #F5F7F8;
+            --bg-card: var(--color-white, #ffffff);
+            --border-color: rgba(51, 88, 211, 0.08);
             
-            /* Premium Depth Shadows - UPDATED TO BLUE ACCENTS */
-            --shadow-sm: 0 4px 20px rgba(11, 19, 42, 0.03);
-            --shadow-md: 0 20px 40px rgba(11, 19, 42, 0.04);
-            --shadow-lg: 0 30px 60px rgba(47, 91, 234, 0.12);
+            /* Premium Depth Shadows - Updated for global theme */
+            --shadow-sm: 0 4px 20px rgba(29, 29, 30, 0.03);
+            --shadow-md: 0 20px 40px rgba(29, 29, 30, 0.04);
+            --shadow-lg: 0 30px 60px rgba(51, 88, 211, 0.12);
             
             --radius-lg: 24px;
             --radius-md: 16px;
@@ -391,7 +404,7 @@
                         <p>Bring together internal processes, cross-enterprise networks, and real-time operational datasets into a unified, dynamic system that extends far beyond traditional ERP paradigms.</p>
                         <div class="hero-btn-group">
                             <a href="contact.html" class="hero-btn-primary">Transform Now</a>
-                            <a href="#" class="hero-btn-secondary">Explore Solutions</a>
+                            <a href="javascript:void(0);" class="hero-btn-secondary">Explore Solutions</a>
                         </div>
                         <div class="hero-achievements">
                             <div class="achievement-box">
@@ -411,7 +424,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="hero-image-wrapper">
-                        <img src="assets/images/gallery/s4hana-strategy-hero.webp" alt="SAP S/4HANA Enterprise Digital Core Strategy" class="img-fluid">
+                        <img loading="lazy" src="assets/images/solutions/sap-s4hana.webp" alt="SAP S/4HANA Modern Intelligent ERP" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -431,7 +444,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="template-card">
                         <div class="template-card-img-wrapper">
-                            <img src="assets/images/services/digital-core.jpg" alt="SAP S/4HANA Digital Core Backbone">
+                            <img loading="lazy" src="assets/images/services/digital-core.jpg" alt="SAP S/4HANA Digital Core Backbone">
                         </div>
                         <h4>The Enterprise Digital Core</h4>
                         <p>SAP S/4HANA unifies internal operational threads with external dynamic workflows into a singular system. It moves beyond traditional ERP boundaries to coordinate data pipelines simultaneously.</p>
@@ -441,7 +454,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="template-card">
                         <div class="template-card-img-wrapper">
-                            <img src="assets/images/services/workforce.jpg" alt="Integrated Workforce Management">
+                            <img loading="lazy" src="assets/images/services/workforce.jpg" alt="Integrated Workforce Management">
                         </div>
                         <h4>Workforce & Talent Care</h4>
                         <p>Manage the entire resource structure through an integrated engagement platform. Bring full-time staff and contingent teams under a centralized framework to ensure operational balance.</p>
@@ -451,7 +464,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="template-card">
                         <div class="template-card-img-wrapper">
-                            <img src="assets/images/services/successfactors.jpg" alt="SAP SuccessFactors Integration">
+                            <img loading="lazy" src="assets/images/services/successfactors.jpg" alt="SAP SuccessFactors Integration">
                         </div>
                         <h4>SuccessFactors & Compliance</h4>
                         <p>Integrating SAP SuccessFactors ensures organizational data underpins company-wide compliance initiatives. Verify that qualified staff hold correct clearance profiles for critical facility management steps.</p>
@@ -461,7 +474,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="template-card">
                         <div class="template-card-img-wrapper">
-                            <img src="assets/images/services/deployment.jpg" alt="Flexible SAP Deployment Options">
+                            <img loading="lazy" src="assets/images/services/deployment.jpg" alt="Flexible SAP Deployment Options">
                         </div>
                         <h4>Adaptive Deployment Models</h4>
                         <p>Available across flexible on-premise, cloud, and hybrid architectures, SAP S/4HANA remains user-friendly and straightforward to manage while resolving data processing challenges.</p>
@@ -471,7 +484,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="template-card">
                         <div class="template-card-img-wrapper">
-                            <img src="assets/images/services/innovation.jpg" alt="IoT and Big Data Transformation">
+                            <img loading="lazy" src="assets/images/services/innovation.jpg" alt="IoT and Big Data Transformation">
                         </div>
                         <h4>Operating Model Transformation</h4>
                         <p>Transform commercial models and unlock fresh revenue streams by harnessing built-in IoT integrations and Big Data processing engines that bridge systems cleanly.</p>
@@ -481,7 +494,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="template-card">
                         <div class="template-card-img-wrapper">
-                            <img src="assets/images/services/simple-finance.jpg" alt="SAP Simple Finance Central Truth">
+                            <img loading="lazy" src="assets/images/services/simple-finance.jpg" alt="SAP Simple Finance Central Truth">
                         </div>
                         <h4>SAP Simple Finance Pathways</h4>
                         <p>Unify financial operations into a live, single source of truth. Many SAP Business Suite clients leverage Simple Finance as their baseline stepping stone for an accelerated S/4HANA transition.</p>
@@ -554,27 +567,29 @@
 
     <div id="footer-container"></div>
 
-    <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        fetch("navbar.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("navbar-container").innerHTML = data;
-                if (typeof $ !== "undefined") {
-                    $(".rts-mobile-menu-active").each(function () {
-                        $(this).metisMenu();
-                    });
-                }
-            })
-            .catch(error => console.error("Error loading header:", error));
-
-        fetch("footer.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("footer-container").innerHTML = data;
-            })
-            .catch(error => console.error("Error loading footer:", error));
-    });
-    </script>
+        <!-- Core Dynamic Component Scripts -->
+    <script defer src="assets/js/vendor/jquery.min.js"></script>
+    <script defer src="assets/js/plugins/bootstrap.min.js"></script>
+    <script defer src="assets/js/plugins/swiper.js"></script>
+    <script defer src="assets/js/plugins/isotop.js"></script>
+    <script defer src="assets/js/plugins/gsap.js"></script>
+    <script defer src="assets/js/plugins/split-text.js"></script>
+    <script defer src="assets/js/plugins/scroll-trigger.js"></script>
+    <script defer src="assets/js/plugins/smooth-scroll.js"></script>
+    <script defer src="assets/js/plugins/counterup.js"></script>
+    <script defer src="assets/js/vendor/jquery-ui.js"></script>
+    <script defer src="assets/js/vendor/magnifying-popup.js"></script>
+    <script defer src="assets/js/vendor/metismenu.js"></script>
+    <script defer src="assets/js/vendor/jarallax.js"></script>
+    <script defer src="assets/js/vendor/waypoints.js"></script>
+    <script defer src="assets/js/vendor/wow.js"></script>
+    <script defer src="assets/js/vendor/contact.form.js"></script>
+    <script defer src="assets/js/main.js"></script>
+    <script defer src="assets/js/footer.js"></script>
+<script defer src="assets/js/navbar.js"></script>
 </body>
 </html>
+
+
+
+

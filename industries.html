@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="description" content="Discover how Prajai Technology delivers intelligent SAP solutions tailored for Manufacturing, Retail, Healthcare, Banking, Logistics, and IT services.">
+    <meta name="keywords" content="SAP, S/4HANA, ERP Solutions, Software Development, Prajai Technology, Coimbatore">
+    <meta name="robots" content="index, follow">
+    <!-- for open graph social media -->
+    <meta property="og:title" content="Industries We Serve | Prajai Technology">
+    <meta property="og:description"
+        content="Prajai Technology | SAP Solutions & Software Development Company in Coimbatore">
+    <!-- for twitter sharing -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Industries We Serve | Prajai Technology">
+    <meta name="twitter:description"
+        content="Prajai Technology | SAP Solutions & Software Development Company in Coimbatore">
+    <!-- favicon -->
+    <link rel="icon" href="assets/images/prajai/favicon.png" type="image/x-icon">
+    <title>Industries We Serve | Prajai Technology</title>
+    
+    <!-- Premium Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet preload" href="assets/css/plugins/animate.min.css" as="style">
+    <link rel="stylesheet preload" href="assets/css/plugins/fontawesome-6.css" as="style">
+    <link rel="stylesheet preload" href="assets/css/plugins/swiper.min.css" as="style">
+    <link rel="stylesheet preload" href="assets/css/vendor/bootstrap.min.css" as="style">
+    <link rel="stylesheet preload" href="assets/css/vendor/jquery-ui.css" as="style">
+    <link rel="stylesheet preload" href="assets/css/vendor/magnific-popup.css" as="style">
+    <link rel="stylesheet preload" href="assets/css/vendor/metismenu.css" as="style">
+    <link rel="stylesheet preload" href="assets/css/vendor/jarallax.min.css" as="style">
+    <link rel="stylesheet preload" href="assets/fonts/flaticon_bokinn.css" as="style">
+    <link rel="stylesheet preload" href="assets/css/style.css" as="style">
+
+    <style>
+        /* ==========================================
+           PREMIUM DESIGN SYSTEM & VARIABLES
+        ========================================== */
+        :root {
+            --brand-primary: var(--color-primary, #3358D3);
+            --brand-secondary: var(--color-info, #1BA2DB);
+            --brand-gradient: linear-gradient(135deg, var(--color-primary, #3358D3) 0%, var(--color-info, #1BA2DB) 100%);
+            --dark-surface: var(--color-heading, #1D1D1E);
+            --body-text: var(--color-body, #868689);
+            --bg-light: #F5F7F8;
+            --bg-card: var(--color-white, #ffffff);
+            --border-color: rgba(51, 88, 211, 0.08);
+            
+            /* Premium Depth Shadows - Updated for global theme */
+            --shadow-sm: 0 4px 20px rgba(29, 29, 30, 0.03);
+            --shadow-md: 0 20px 40px rgba(29, 29, 30, 0.04);
+            --shadow-lg: 0 30px 60px rgba(51, 88, 211, 0.12);
+            
+            --radius-lg: 24px;
+            --radius-md: 16px;
+            --radius-sm: 12px;
+            --transition-premium: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        body {
+            background-color: var(--bg-light);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: var(--body-text);
+            overflow-x: hidden;
+            letter-spacing: -0.01em;
+        }
+
+        /* ==========================================
+           HERO SECTION ELEVATION
+        ========================================== */
+        .implementation-hero {
+            position: relative;
+            overflow: hidden;
+            min-height: 100vh;
+            background: radial-gradient(circle at 85% 20%, rgba(0, 212, 255, 0.15) 0%, transparent 50%),
+                        radial-gradient(circle at 15% 75%, rgba(47, 91, 234, 0.08) 0%, transparent 45%),
+                        linear-gradient(180deg, #F5F7F8 0%, #ffffff 100%);
+            padding-top: 160px;
+            padding-bottom: 100px;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content { position: relative; z-index: 5; }
+        
+        .hero-subtitle {
+            background: rgba(47, 91, 234, 0.06);
+            color: var(--brand-primary);
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 32px;
+            padding: 10px 24px;
+            border-radius: 100px;
+            border: 1px solid rgba(47, 91, 234, 0.12);
+            backdrop-filter: blur(4px);
+        }
+
+        .hero-subtitle::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: var(--brand-primary);
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--brand-primary);
+        }
+
+        .hero-content h1 {
+            font-size: 64px;
+            font-weight: 800;
+            line-height: 1.15;
+            color: var(--dark-surface);
+            margin-bottom: 28px;
+            letter-spacing: -0.03em;
+        }
+
+        .hero-content h1 span {
+            background: var(--brand-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+
+        .hero-content p {
+            font-size: 19px;
+            color: var(--body-text);
+            line-height: 1.8;
+            margin-bottom: 48px;
+            max-width: 550px;
+        }
+
+        .hero-btn-group { display: flex; gap: 20px; margin-bottom: 60px; }
+        
+        .hero-btn-primary {
+            background: var(--brand-gradient);
+            color: #fff !important;
+            padding: 20px 42px;
+            border-radius: var(--radius-sm);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            box-shadow: 0 12px 30px rgba(47, 91, 234, 0.25);
+            transition: var(--transition-premium);
+        }
+
+        .hero-btn-primary:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(47, 91, 234, 0.35);
+        }
+
+        .hero-btn-secondary {
+            background: #ffffff;
+            border: 1px solid rgba(11, 19, 42, 0.1);
+            color: var(--dark-surface) !important;
+            padding: 20px 42px;
+            border-radius: var(--radius-sm);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: var(--transition-premium);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .hero-btn-secondary:hover {
+            background: var(--dark-surface);
+            color: #fff !important;
+            border-color: var(--dark-surface);
+            transform: translateY(-5px);
+        }
+
+        .hero-achievements { display: flex; gap: 24px; }
+        
+        .achievement-box {
+            background: #fff;
+            padding: 24px;
+            min-width: 160px;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-color);
+            transition: var(--transition-premium);
+        }
+
+        .achievement-box:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(11, 19, 42, 0.08);
+        }
+
+        .achievement-box h3 {
+            background: var(--brand-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 6px;
+            letter-spacing: -0.02em;
+        }
+
+        .achievement-box span {
+            color: var(--body-text);
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .hero-image-wrapper {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .hero-image-wrapper img {
+            width: 100%;
+            border-radius: var(--radius-lg);
+            box-shadow: 0 50px 100px rgba(11, 19, 42, 0.09);
+        }
+
+        /* ==========================================
+           MAIN GRID & CONTENT ARCHITECTURE
+        ========================================== */
+        .template-section-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 80px auto;
+        }
+
+        .template-section-header h2 {
+            font-size: 46px;
+            font-weight: 800;
+            color: var(--dark-surface);
+            margin-bottom: 24px;
+            letter-spacing: -0.03em;
+            line-height: 1.25;
+        }
+
+        .template-section-header p {
+            font-size: 18px;
+            color: var(--body-text);
+            line-height: 1.8;
+        }
+
+        /* High-End Matrix Card Grid Architecture (image_8b3c88.jpg layout structure) */
+        .template-card {
+            background: var(--bg-card);
+            border-radius: var(--radius-lg);
+            padding: 40px 36px;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-color);
+            text-align: center;
+            transition: var(--transition-premium);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Top colored indicator bar for luxury styling look */
+        .template-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 5px;
+            background: var(--brand-gradient);
+            opacity: 0;
+            transition: var(--transition-premium);
+        }
+
+        .template-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+            border-color: rgba(47, 91, 234, 0.15);
+        }
+
+        .template-card:hover::before {
+            opacity: 1;
+        }
+
+        .template-card-img-wrapper {
+            width: 100%;
+            height: 220px;
+            overflow: hidden;
+            border-radius: var(--radius-md);
+            margin-bottom: 32px;
+            position: relative;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .template-card-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition-premium);
+        }
+
+        .template-card:hover .template-card-img-wrapper img {
+            transform: scale(1.06);
+        }
+
+        .template-card h4 {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--dark-surface);
+            margin-bottom: 16px;
+            line-height: 1.4;
+            letter-spacing: -0.02em;
+            transition: var(--transition-premium);
+        }
+
+        .template-card:hover h4 {
+            color: var(--brand-primary);
+        }
+
+        .template-card p {
+            font-size: 15.5px;
+            color: var(--body-text);
+            line-height: 1.75;
+            margin-bottom: 0;
+            flex-grow: 1;
+        }
+
+        /* ==========================================
+           PREMIUM GRID MATRIX TABLE
+        ========================================== */
+        .matrix-container {
+            background: var(--bg-card);
+            padding: 48px;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-color);
+        }
+
+        .custom-matrix {
+            border-collapse: separate;
+            border-spacing: 0;
+        }
+
+        .custom-matrix th {
+            background-color: #F5F7F8 !important;
+            color: var(--brand-primary) !important;
+            font-weight: 700;
+            padding: 22px 28px !important;
+            font-size: 16px;
+            letter-spacing: -0.01em;
+            border-bottom: 2px solid rgba(47, 91, 234, 0.15) !important;
+        }
+
+        .custom-matrix th:first-child { border-top-left-radius: var(--radius-sm); }
+        .custom-matrix th:last-child { border-top-right-radius: var(--radius-sm); }
+
+        .custom-matrix td {
+            padding: 24px 28px !important;
+            color: var(--body-text);
+            font-size: 15.5px;
+            border-bottom: 1px solid #E6E6EB;
+            transition: var(--transition-premium);
+        }
+
+        .custom-matrix tr:last-child td {
+            border-bottom: none;
+        }
+
+        .custom-matrix tr:hover td {
+            background-color: #F5F7F8;
+            color: var(--dark-surface);
+        }
+
+        .feature-lead {
+            font-weight: 700;
+            color: var(--dark-surface);
+        }
+
+        /* ==========================================
+           CTA SECTION STYLING
+        ========================================== */
+        .rts-cta-area {
+            position: relative;
+            padding: 100px 0;
+            overflow: hidden;
+        }
+
+        .rts-cta-area::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(135deg, rgba(29, 29, 30, 0.88) 0%, rgba(51, 88, 211, 0.85) 100%);
+            z-index: 1;
+        }
+
+        .rts-cta-area .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .cta-wrapper {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-content .title.cw {
+            font-size: 42px;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 20px;
+            letter-spacing: -0.03em;
+        }
+
+        .cta-content .desc.cw {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.85);
+            line-height: 1.8;
+            margin-bottom: 36px;
+        }
+
+        .cta-content .rts-btn.btn-primary {
+            background: var(--brand-gradient);
+            color: #ffffff;
+            padding: 18px 42px;
+            border-radius: var(--radius-sm);
+            font-weight: 700;
+            font-size: 16px;
+            text-decoration: none;
+            display: inline-block;
+            border: none;
+            box-shadow: 0 12px 30px rgba(47, 91, 234, 0.35);
+            transition: var(--transition-premium);
+        }
+
+        .cta-content .rts-btn.btn-primary:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(47, 91, 234, 0.5);
+        }
+
+        /* ==========================================
+           RESPONSIVE SYSTEM STYLING
+        ========================================== */
+        @media(max-width: 1199px) {
+            .hero-content h1 { font-size: 54px; }
+            .template-section-header h2 { font-size: 38px; }
+        }
+        @media(max-width: 991px) {
+            .implementation-hero { padding-top: 140px; padding-bottom: 80px; min-height: auto; }
+            .hero-content { text-align: center; margin-bottom: 60px; }
+            .hero-content p { margin-left: auto; margin-right: auto; }
+            .hero-btn-group { justify-content: center; }
+            .hero-achievements { justify-content: center; }
+            .hero-image-wrapper { padding-left: 0; }
+            .matrix-container { padding: 24px; }
+        }
+        @media(max-width: 576px) {
+            .hero-content h1 { font-size: 38px; }
+            .hero-btn-group { flex-direction: column; gap: 14px; }
+            .hero-achievements { flex-wrap: wrap; }
+            .achievement-box { width: 100%; }
+            .template-card { padding: 32px 24px; }
+            .cta-content .title.cw { font-size: 28px; }
+            .cta-content .desc.cw { font-size: 15px; }
+            .rts-cta-area { padding: 60px 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="navbar-container"></div>
+
+    <!-- Hero Section Content -->
+    <section class="implementation-hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <span class="hero-subtitle">Industries We Serve</span>
+                        <h1>Industries We Serve</h1>
+                        <p>Empowering businesses across industries with intelligent SAP solutions that drive operational excellence, digital transformation, and sustainable growth.</p>
+                        <div class="hero-btn-group">
+                            <a href="contact.html" class="hero-btn-primary">Request Consultation</a>
+                            <a href="#about" class="hero-btn-secondary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image-wrapper">
+                        <img src="assets/images/industries/hero.png" alt="Industries We Serve Overview" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Main Content Grid Architecture -->
+    <section class="py-5" id="about" style="background-color: #ffffff; padding-top: 100px !important; padding-bottom: 100px !important;">
+        <div class="container">
+
+            <!-- Title Area / Introduction -->
+            <div class="template-section-header text-center mb-5">
+                <h2>Industries We Serve</h2>
+                <p class="desc">At Prajai Technology, we understand that every sector faces unique challenges. We deliver specialized SAP consulting, robust implementation, and ongoing support solutions tailored to your industry's specific operational demands. Discover how our enterprise-grade SAP strategies accelerate digital transformation and optimize business processes globally.</p>
+            </div>
+
+            <!-- Industries Grid -->
+            <div class="row g-5 mt--20 justify-content-center">
+                
+                <!-- Manufacturing -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="template-card">
+                        <div class="template-card-img-wrapper">
+                            <img loading="lazy" src="assets/images/industries/manufacturing.png" alt="SAP Solutions for Manufacturing Industry" class="img-fluid">
+                        </div>
+                        <h4>Manufacturing</h4>
+                        <p class="mb-2"><strong>Industry Challenges:</strong> Disconnected plant operations, supply chain bottlenecks, and lack of real-time inventory visibility.</p>
+                        <p class="mb-2"><strong>SAP Solutions:</strong> SAP S/4HANA Production Planning, SAP Business One, Predictive Maintenance, and IoT Smart Factory Integration.</p>
+                        <p class="mb-2"><strong>Business Benefits:</strong> End-to-end visibility, optimized production cycles, reduced operational costs, and streamlined supply chains.</p>
+                        <p class="mb-4"><strong>Why Prajai:</strong> Deep expertise in manufacturing ERP integrations with zero-downtime deployment strategies.</p>
+                        <a href="contact.html" class="rts-btn btn-primary-2 mt-auto">Talk to an Expert</a>
+                    </div>
+                </div>
+
+                <!-- Retail -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="template-card">
+                        <div class="template-card-img-wrapper">
+                            <img loading="lazy" src="assets/images/industries/retail.png" alt="SAP Solutions for Retail Industry" class="img-fluid">
+                        </div>
+                        <h4>Retail</h4>
+                        <p class="mb-2"><strong>Industry Challenges:</strong> Disjointed customer experiences, inaccurate demand forecasting, and inefficient procurement cycles.</p>
+                        <p class="mb-2"><strong>SAP Solutions:</strong> SAP Commerce Cloud, SAP Customer Experience (CX), and Retail Inventory Management.</p>
+                        <p class="mb-2"><strong>Business Benefits:</strong> Seamless omnichannel commerce, real-time inventory tracking, and highly personalized customer journeys.</p>
+                        <p class="mb-4"><strong>Why Prajai:</strong> Proven track record of scaling retail infrastructures for global consumer markets.</p>
+                        <a href="contact.html" class="rts-btn btn-primary-2 mt-auto">Talk to an Expert</a>
+                    </div>
+                </div>
+
+                <!-- Healthcare -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="template-card">
+                        <div class="template-card-img-wrapper">
+                            <img loading="lazy" src="assets/images/industries/healthcare.png" alt="SAP Solutions for Healthcare Industry" class="img-fluid">
+                        </div>
+                        <h4>Healthcare</h4>
+                        <p class="mb-2"><strong>Industry Challenges:</strong> Strict regulatory compliance, fragmented hospital operations, and complex medical asset management.</p>
+                        <p class="mb-2"><strong>SAP Solutions:</strong> SAP S/4HANA Healthcare, Procurement integration, and secure Medical Financial Management.</p>
+                        <p class="mb-2"><strong>Business Benefits:</strong> Improved patient outcomes, secure data compliance, and optimized hospital operational efficiency.</p>
+                        <p class="mb-4"><strong>Why Prajai:</strong> Secure, compliant, and highly reliable digital healthcare system implementations.</p>
+                        <a href="contact.html" class="rts-btn btn-primary-2 mt-auto">Talk to an Expert</a>
+                    </div>
+                </div>
+
+                <!-- Banking & Finance -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="template-card">
+                        <div class="template-card-img-wrapper">
+                            <img loading="lazy" src="assets/images/industries/banking.png" alt="SAP Solutions for Banking and Finance" class="img-fluid">
+                        </div>
+                        <h4>Banking & Finance</h4>
+                        <p class="mb-2"><strong>Industry Challenges:</strong> Evolving regulatory compliance, fragmented risk management, and slow financial reporting cycles.</p>
+                        <p class="mb-2"><strong>SAP Solutions:</strong> SAP Financial Planning, SAP Risk Management, and Intelligent Core Analytics.</p>
+                        <p class="mb-2"><strong>Business Benefits:</strong> Automated reporting, enhanced fraud detection, and agile, data-driven financial decision-making.</p>
+                        <p class="mb-4"><strong>Why Prajai:</strong> Specialized consultants experienced in deploying robust, secure fintech digital transformations.</p>
+                        <a href="contact.html" class="rts-btn btn-primary-2 mt-auto">Talk to an Expert</a>
+                    </div>
+                </div>
+
+                <!-- Logistics & Supply Chain -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="template-card">
+                        <div class="template-card-img-wrapper">
+                            <img loading="lazy" src="assets/images/industries/logistics.png" alt="SAP Solutions for Logistics and Supply Chain" class="img-fluid">
+                        </div>
+                        <h4>Logistics & Supply Chain</h4>
+                        <p class="mb-2"><strong>Industry Challenges:</strong> Poor inventory visibility, inefficient warehouse management, and delayed global distribution networks.</p>
+                        <p class="mb-2"><strong>SAP Solutions:</strong> SAP Extended Warehouse Management (EWM), Transportation Management, and Procurement optimization.</p>
+                        <p class="mb-2"><strong>Business Benefits:</strong> Accelerated order fulfillment, automated warehouse operations, and resilient supply chain networks.</p>
+                        <p class="mb-4"><strong>Why Prajai:</strong> Strategic optimization of complex global logistics ecosystems using intelligent SAP tools.</p>
+                        <a href="contact.html" class="rts-btn btn-primary-2 mt-auto">Talk to an Expert</a>
+                    </div>
+                </div>
+
+                <!-- IT & Services -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="template-card">
+                        <div class="template-card-img-wrapper">
+                            <img loading="lazy" src="assets/images/industries/it.png" alt="SAP Solutions for IT and Professional Services" class="img-fluid">
+                        </div>
+                        <h4>IT & Services</h4>
+                        <p class="mb-2"><strong>Industry Challenges:</strong> Inefficient resource planning, disconnected project management, and unoptimized service delivery workflows.</p>
+                        <p class="mb-2"><strong>SAP Solutions:</strong> SAP Professional Services Cloud, SAP Resource Management, and Integrated Financial Operations.</p>
+                        <p class="mb-2"><strong>Business Benefits:</strong> Streamlined project lifecycles, optimized talent allocation, and increased service profitability.</p>
+                        <p class="mb-4"><strong>Why Prajai:</strong> We run on the same digital transformation principles we deploy for our professional service clients.</p>
+                        <a href="contact.html" class="rts-btn btn-primary-2 mt-auto">Talk to an Expert</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Industries Choose Prajai Technology -->
+    <section class="py-5 bg-light" style="padding-top: 80px !important; padding-bottom: 80px !important;">
+        <div class="container">
+            <div class="template-section-header text-center mb-5">
+                <h2>Why Industries Choose Prajai Technology</h2>
+                <p class="desc">We combine technical excellence with deep industry knowledge to ensure your SAP investment delivers maximum value and long-term sustainability.</p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-benefit-box h-100 p-4 bg-white rounded shadow-sm border">
+                        <div class="icon mb-3"><i class="fa-light fa-certificate fa-2x text-primary"></i></div>
+                        <h5 class="title font-weight-bold">SAP Certified Consultants</h5>
+                        <p class="desc mb-0">We deploy certified experts who understand the nuances and technical requirements of your specific industry.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-benefit-box h-100 p-4 bg-white rounded shadow-sm border">
+                        <div class="icon mb-3"><i class="fa-light fa-globe fa-2x text-primary"></i></div>
+                        <h5 class="title font-weight-bold">Industry Expertise</h5>
+                        <p class="desc mb-0">Decades of combined experience delivering tailored solutions for complex sector challenges across global markets.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-benefit-box h-100 p-4 bg-white rounded shadow-sm border">
+                        <div class="icon mb-3"><i class="fa-light fa-network-wired fa-2x text-primary"></i></div>
+                        <h5 class="title font-weight-bold">End-to-End SAP Services</h5>
+                        <p class="desc mb-0">From strategic advisory and full implementation to integration and continuous Application Management Support.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-benefit-box h-100 p-4 bg-white rounded shadow-sm border">
+                        <div class="icon mb-3"><i class="fa-light fa-cloud fa-2x text-primary"></i></div>
+                        <h5 class="title font-weight-bold">Cloud Transformation</h5>
+                        <p class="desc mb-0">Accelerating your journey to the cloud with scalable, secure, and modern SAP Cloud architectures.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-benefit-box h-100 p-4 bg-white rounded shadow-sm border">
+                        <div class="icon mb-3"><i class="fa-light fa-gears fa-2x text-primary"></i></div>
+                        <h5 class="title font-weight-bold">Process Optimization</h5>
+                        <p class="desc mb-0">Streamlining workflows and adopting industry best practices for maximum operational efficiency and cost reduction.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-benefit-box h-100 p-4 bg-white rounded shadow-sm border">
+                        <div class="icon mb-3"><i class="fa-light fa-headset fa-2x text-primary"></i></div>
+                        <h5 class="title font-weight-bold">Continuous Support</h5>
+                        <p class="desc mb-0">Providing 24/7 monitoring, issue resolution, and proactive system enhancements for uninterrupted operations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Benefits -->
+    <section class="py-5" style="background-color: #ffffff; padding-top: 80px !important; padding-bottom: 80px !important;">
+        <div class="container">
+            <div class="template-section-header text-center mb-5">
+                <h2>Business Benefits</h2>
+                <p class="desc">Our industry-tailored SAP solutions empower your organization to achieve measurable, transformative results.</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item p-4 border h-100 shadow-sm rounded">
+                        <div class="icon mb-3"><i class="fa-light fa-arrow-trend-up fa-2x text-primary"></i></div>
+                        <h4 class="title">Increased Operational Efficiency</h4>
+                        <p class="desc mb-0">Automate manual tasks and streamline core processes across all departments to dramatically reduce operational bottlenecks.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item p-4 border h-100 shadow-sm rounded">
+                        <div class="icon mb-3"><i class="fa-light fa-chart-pie fa-2x text-primary"></i></div>
+                        <h4 class="title">Data-Driven Decision Making</h4>
+                        <p class="desc mb-0">Leverage real-time analytics and predictive insights to make faster, more accurate strategic business decisions.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item p-4 border h-100 shadow-sm rounded">
+                        <div class="icon mb-3"><i class="fa-light fa-users-viewfinder fa-2x text-primary"></i></div>
+                        <h4 class="title">Improved Customer Experience</h4>
+                        <p class="desc mb-0">Enhance visibility and responsiveness to deliver superior, highly personalized experiences to your clients and partners.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item p-4 border h-100 shadow-sm rounded">
+                        <div class="icon mb-3"><i class="fa-light fa-bolt fa-2x text-primary"></i></div>
+                        <h4 class="title">Business Agility</h4>
+                        <p class="desc mb-0">Adapt quickly to market shifts, regulatory changes, and new opportunities with a flexible digital enterprise core.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item p-4 border h-100 shadow-sm rounded">
+                        <div class="icon mb-3"><i class="fa-light fa-money-bill-trend-up fa-2x text-primary"></i></div>
+                        <h4 class="title">Reduced Operational Costs</h4>
+                        <p class="desc mb-0">Consolidate legacy systems and optimize resource allocation to achieve a significantly lower total cost of ownership.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item p-4 border h-100 shadow-sm rounded">
+                        <div class="icon mb-3"><i class="fa-light fa-chart-line-up fa-2x text-primary"></i></div>
+                        <h4 class="title">Scalable Enterprise Growth</h4>
+                        <p class="desc mb-0">Build a future-proof enterprise foundation that scales effortlessly as your business expands operations globally.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Transformation Process -->
+    <section class="py-5 bg-light" style="padding-top: 80px !important; padding-bottom: 80px !important;">
+        <div class="container">
+            <div class="template-section-header text-center mb-5">
+                <h2>Industries Transformation Process</h2>
+                <p class="desc">A proven, systematic methodology to transition your legacy systems into a modern, industry-leading SAP ecosystem.</p>
+            </div>
+            
+            <div class="row g-4 align-items-stretch justify-content-center">
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center p-4 bg-white rounded shadow-sm border h-100">
+                        <div class="icon mb-3"><i class="fa-light fa-magnifying-glass-chart fa-3x text-primary"></i></div>
+                        <h4 class="title">1. Discovery</h4>
+                        <p class="desc mb-0 text-muted">We analyze your specific industry bottlenecks and map out an optimized SAP architecture tailored to your needs.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center p-4 bg-white rounded shadow-sm border h-100">
+                        <div class="icon mb-3"><i class="fa-light fa-pen-ruler fa-3x text-primary"></i></div>
+                        <h4 class="title">2. Design</h4>
+                        <p class="desc mb-0 text-muted">Creating a blueprint for your digital transformation, focusing on seamless integration and minimal disruption.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center p-4 bg-white rounded shadow-sm border h-100">
+                        <div class="icon mb-3"><i class="fa-light fa-rocket fa-3x text-primary"></i></div>
+                        <h4 class="title">3. Deployment</h4>
+                        <p class="desc mb-0 text-muted">Agile execution by certified experts to implement, configure, and migrate your data securely to the new SAP system.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center p-4 bg-white rounded shadow-sm border h-100">
+                        <div class="icon mb-3"><i class="fa-light fa-headset fa-3x text-primary"></i></div>
+                        <h4 class="title">4. Support</h4>
+                        <p class="desc mb-0 text-muted">Continuous monitoring, application management, and iterative improvements to maximize long-term ROI.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Area -->
+    <section class="rts-cta-area rts-cta-area-3" style="background-image: url('assets/images/industries/hero.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="cta-wrapper">
+                        <div class="cta-content">
+                            <h2 class="title cw">Ready to Transform Your Industry?</h2>
+                            <p class="desc cw">Partner with Prajai Technology to accelerate your digital transformation with intelligent SAP solutions designed for your industry.</p>
+                            <a href="contact.html" class="rts-btn btn-primary">Talk to an SAP Expert</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+        <!-- Core Dynamic Component Scripts -->
+    <script defer src="assets/js/vendor/jquery.min.js"></script>
+    <script defer src="assets/js/plugins/bootstrap.min.js"></script>
+    <script defer src="assets/js/plugins/swiper.js"></script>
+    <script defer src="assets/js/plugins/isotop.js"></script>
+    <script defer src="assets/js/plugins/gsap.js"></script>
+    <script defer src="assets/js/plugins/split-text.js"></script>
+    <script defer src="assets/js/plugins/scroll-trigger.js"></script>
+    <script defer src="assets/js/plugins/smooth-scroll.js"></script>
+    <script defer src="assets/js/plugins/counterup.js"></script>
+    <script defer src="assets/js/vendor/jquery-ui.js"></script>
+    <script defer src="assets/js/vendor/magnifying-popup.js"></script>
+    <script defer src="assets/js/vendor/metismenu.js"></script>
+    <script defer src="assets/js/vendor/jarallax.js"></script>
+    <script defer src="assets/js/vendor/waypoints.js"></script>
+    <script defer src="assets/js/vendor/wow.js"></script>
+    <script defer src="assets/js/vendor/contact.form.js"></script>
+    <script defer src="assets/js/main.js"></script>
+    <script defer src="assets/js/footer.js"></script>
+<script defer src="assets/js/navbar.js"></script>
+</body>
+</html>
+
+
+
+

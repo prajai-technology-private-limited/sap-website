@@ -557,8 +557,6 @@
     }
   };
 
-  rtsJs.m();
-
   document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll("[data-bg-src]").forEach(function (el) {
       const bg = el.getAttribute("data-bg-src");
@@ -570,32 +568,22 @@
       }
     });
   });
+
+  $(function () {
+      const $navbar = $("#navbar-container");
+      if ($navbar.length) {
+          $navbar.load("navbar.html", function (response, status) {
+              if (status === "error") {
+                  console.error("Failed to load navbar.html");
+                  return;
+              }
+              // Initialize ALL javascript behavior NOW that the navbar elements exist in DOM!
+              rtsJs.m();
+          });
+      } else {
+          // If no navbar container exists, just init normally
+          rtsJs.m();
+      }
+  });
+
 })(jQuery, window);
-
-/*==========================================
-=        Load Common Navbar
-==========================================*/
-
-$(function () {
-    const $navbar = $("#navbar-container");
-
-    if ($navbar.length) {
-        $navbar.load("navbar.html", function (response, status) {
-
-            if (status === "error") {
-                console.error("Failed to load navbar.html");
-                return;
-            }
-
-            // Initialize MetisMenu after navbar is loaded
-            if ($.fn.metisMenu) {
-                $(".main-nav-area").metisMenu();
-            }
-
-            // Reinitialize any other plugins if needed
-            if (typeof WOW !== "undefined") {
-                new WOW().init();
-            }
-        });
-    }
-});

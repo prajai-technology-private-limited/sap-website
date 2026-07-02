@@ -1,0 +1,14 @@
+Options +FollowSymLinks -MultiViews
+RewriteEngine On
+
+# 1. Redirect index.html to directory root (so /sap_web/index.html becomes /sap_web/)
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^/]+/)*index\.html\ HTTP/
+RewriteRule ^(([^/]+/)*)index\.html$ /$1 [R=301,L]
+
+# 2. Redirect other .html to extensionless
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^\ ]+)\.html
+RewriteRule ^/?(.*)\.html$ /$1 [L,R=301]
+
+# 3. Internally rewrite extensionless to .html if the .html file exists
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}.html -f
+RewriteRule ^(.*)$ $1.html [L]

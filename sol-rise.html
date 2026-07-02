@@ -4,7 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RISE with SAP - Enterprise Business Transformation</title>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="description" content="Prajai Technology | SAP Solutions & Software Development Company in Coimbatore">
+    <meta name="keywords" content="SAP, S/4HANA, ERP Solutions, Software Development, Prajai Technology, Coimbatore">
+    <meta name="robots" content="index, follow">
+    <!-- for open graph social media -->
+    <meta property="og:title" content="RISE with SAP | Prajai Technology">
+    <meta property="og:description" content="Prajai Technology | SAP Solutions & Software Development Company in Coimbatore">
+    <!-- for twitter sharing -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="RISE with SAP | Prajai Technology">
+    <meta name="twitter:description" content="Prajai Technology | SAP Solutions & Software Development Company in Coimbatore">
+    <!-- favicon -->
+    <link rel="icon" href="assets/images/prajai/favicon.png" type="image/x-icon">
+    <title>RISE with SAP | Prajai Technology</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -18,19 +31,19 @@
            PREMIUM DESIGN SYSTEM & VARIABLES
         ========================================== */
         :root {
-            --brand-primary: #2f5bea;
-            --brand-secondary: #00d4ff;
-            --brand-gradient: linear-gradient(135deg, #2f5bea 0%, #00d4ff 100%);
-            --dark-surface: #0b132a; /* Deep luxury navy for headers */
-            --body-text: #4e5d78;    /* Professional slate-indigo for balanced legibility */
-            --bg-light: #faf8ff;
-            --bg-card: #ffffff;
-             --border-color: rgba(47, 91, 234, 0.08);
+            --brand-primary: var(--color-primary, #3358D3);
+            --brand-secondary: var(--color-info, #1BA2DB);
+            --brand-gradient: linear-gradient(135deg, var(--color-primary, #3358D3) 0%, var(--color-info, #1BA2DB) 100%);
+            --dark-surface: var(--color-heading, #1D1D1E);
+            --body-text: var(--color-body, #868689);
+            --bg-light: #F5F7F8;
+            --bg-card: var(--color-white, #ffffff);
+            --border-color: rgba(51, 88, 211, 0.08);
             
-            /* Premium Depth Shadows - UPDATED TO BLUE ACCENTS */
-            --shadow-sm: 0 4px 20px rgba(11, 19, 42, 0.03);
-            --shadow-md: 0 20px 40px rgba(11, 19, 42, 0.04);
-            --shadow-lg: 0 30px 60px rgba(47, 91, 234, 0.12);
+            /* Premium Depth Shadows - Updated for global theme */
+            --shadow-sm: 0 4px 20px rgba(29, 29, 30, 0.03);
+            --shadow-md: 0 20px 40px rgba(29, 29, 30, 0.04);
+            --shadow-lg: 0 30px 60px rgba(51, 88, 211, 0.12);
             
             --radius-lg: 24px;
             --radius-md: 16px;
@@ -420,7 +433,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="hero-image-wrapper">
-                        <img src="assets/images/gallery/rise-hero.webp" alt="Enterprise Business Transformation with RISE with SAP" class="img-fluid">
+                        <img loading="lazy" src="assets/images/solutions/rise-with-sap.webp" alt="RISE with SAP Enterprise Cloud Transformation" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -440,7 +453,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="template-card">
                         <div class="template-card-img-wrapper">
-                            <img src="assets/images/services/rise-overview.jpg" alt="RISE with SAP Framework Bundling">
+                            <img loading="lazy" src="assets/images/services/rise-overview.jpg" alt="RISE with SAP Framework Bundling">
                         </div>
                         <h4>What is RISE with SAP?</h4>
                         <p>Positioned as an exclusive go-to-market offering, RISE with SAP bundles critical cloud solutions, dynamic architecture, and lifecycle hosting options. It functions as a complete solution stack to handle complex operational processes without siloed data blocks.</p>
@@ -450,7 +463,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="template-card">
                         <div class="template-card-img-wrapper">
-                            <img src="assets/images/services/modernize.jpg" alt="Enterprise Architecture Optimization">
+                            <img loading="lazy" src="assets/images/services/modernize.jpg" alt="Enterprise Architecture Optimization">
                         </div>
                         <h4>Infrastructure Modernization</h4>
                         <p>Modernize by leveraging premium cloud infrastructure setups to achieve the lowest possible total cost of ownership (TCO). Scale effortlessly while keeping underlying enterprise resources lightweight, reliable, and deeply protected.</p>
@@ -460,7 +473,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="template-card">
                         <div class="template-card-img-wrapper">
-                            <img src="assets/images/services/standardize.jpg" alt="Process Standardization Flow">
+                            <img loading="lazy" src="assets/images/services/standardize.jpg" alt="Process Standardization Flow">
                         </div>
                         <h4>Intelligent Standardization</h4>
                         <p>Standardize operational lines using an integrated intelligent suite to maximize process efficiency and support elastic system scalability. Eliminate technical debt and align execution with modern global industry standards.</p>
@@ -470,7 +483,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="template-card">
                         <div class="template-card-img-wrapper">
-                            <img src="assets/images/services/digitize.jpg" alt="Digital Infrastructure Platform">
+                            <img loading="lazy" src="assets/images/services/digitize.jpg" alt="Digital Infrastructure Platform">
                         </div>
                         <h4>Strategic Digitization</h4>
                         <p>Digitize through a robust, security-focused transformation platform that speeds up product innovation cycles. Deliver a sustainable competitive edge by turning raw real-time data metrics into immediate action items.</p>
@@ -480,7 +493,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="template-card">
                         <div class="template-card-img-wrapper">
-                            <img src="assets/images/services/managed-service.jpg" alt="Managed Cloud Operations">
+                            <img loading="lazy" src="assets/images/services/managed-service.jpg" alt="Managed Cloud Operations">
                         </div>
                         <h4>Managed Cloud Paradigm</h4>
                         <p>As a fully managed cloud engine, RISE with SAP enables corporations to move from on-premise legacy landscapes (like SAP ECC and standard S/4HANA instances) into secure public or private cloud domains with absolute business continuity.</p>
@@ -490,7 +503,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="template-card">
                         <div class="template-card-img-wrapper">
-                            <img src="assets/images/services/analytics.jpg" alt="Real-time Analytics Metrics">
+                            <img loading="lazy" src="assets/images/services/analytics.jpg" alt="Real-time Analytics Metrics">
                         </div>
                         <h4>Intelligence & Resilience</h4>
                         <p>Unlock advanced management workflows enriched with built-in machine intelligence, live analytical processing, and data security. The resulting visibility strengthens compliance tracks and hardens overall corporate risk profiles.</p>
@@ -563,27 +576,29 @@
 
     <div id="footer-container"></div>
 
-    <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        fetch("navbar.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("navbar-container").innerHTML = data;
-                if (typeof $ !== "undefined") {
-                    $(".rts-mobile-menu-active").each(function () {
-                        $(this).metisMenu();
-                    });
-                }
-            })
-            .catch(error => console.error("Error loading header:", error));
-
-        fetch("footer.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("footer-container").innerHTML = data;
-            })
-            .catch(error => console.error("Error loading footer:", error));
-    });
-    </script>
+        <!-- Core Dynamic Component Scripts -->
+    <script defer src="assets/js/vendor/jquery.min.js"></script>
+    <script defer src="assets/js/plugins/bootstrap.min.js"></script>
+    <script defer src="assets/js/plugins/swiper.js"></script>
+    <script defer src="assets/js/plugins/isotop.js"></script>
+    <script defer src="assets/js/plugins/gsap.js"></script>
+    <script defer src="assets/js/plugins/split-text.js"></script>
+    <script defer src="assets/js/plugins/scroll-trigger.js"></script>
+    <script defer src="assets/js/plugins/smooth-scroll.js"></script>
+    <script defer src="assets/js/plugins/counterup.js"></script>
+    <script defer src="assets/js/vendor/jquery-ui.js"></script>
+    <script defer src="assets/js/vendor/magnifying-popup.js"></script>
+    <script defer src="assets/js/vendor/metismenu.js"></script>
+    <script defer src="assets/js/vendor/jarallax.js"></script>
+    <script defer src="assets/js/vendor/waypoints.js"></script>
+    <script defer src="assets/js/vendor/wow.js"></script>
+    <script defer src="assets/js/vendor/contact.form.js"></script>
+    <script defer src="assets/js/main.js"></script>
+    <script defer src="assets/js/footer.js"></script>
+<script defer src="assets/js/navbar.js"></script>
 </body>
 </html>
+
+
+
+

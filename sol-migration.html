@@ -3,7 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAP S/4HANA to RISE with SAP Migration | Prajai</title>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="description" content="Prajai Technology | SAP Solutions & Software Development Company in Coimbatore">
+    <meta name="keywords" content="SAP, S/4HANA, ERP Solutions, Software Development, Prajai Technology, Coimbatore">
+    <meta name="robots" content="index, follow">
+    <!-- for open graph social media -->
+    <meta property="og:title" content="SAP Data Migration | Prajai Technology">
+    <meta property="og:description" content="Prajai Technology | SAP Solutions & Software Development Company in Coimbatore">
+    <!-- for twitter sharing -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SAP Data Migration | Prajai Technology">
+    <meta name="twitter:description" content="Prajai Technology | SAP Solutions & Software Development Company in Coimbatore">
+    <!-- favicon -->
+    <link rel="icon" href="assets/images/prajai/favicon.png" type="image/x-icon">
+    <title>SAP Data Migration | Prajai Technology</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -17,19 +30,19 @@
            PREMIUM DESIGN SYSTEM & VARIABLES
         ========================================== */
         :root {
-            --brand-primary: #2f5bea;
-            --brand-secondary: #00d4ff;
-            --brand-gradient: linear-gradient(135deg, #2f5bea 0%, #00d4ff 100%);
-            --dark-surface: #0b132a; /* Deep luxury navy for headers */
-            --body-text: #4e5d78;    /* Professional slate-indigo for balanced legibility */
-            --bg-light: #faf8ff;
-            --bg-card: #ffffff;
-            --border-color: rgba(47, 91, 234, 0.08);
+            --brand-primary: var(--color-primary, #3358D3);
+            --brand-secondary: var(--color-info, #1BA2DB);
+            --brand-gradient: linear-gradient(135deg, var(--color-primary, #3358D3) 0%, var(--color-info, #1BA2DB) 100%);
+            --dark-surface: var(--color-heading, #1D1D1E);
+            --body-text: var(--color-body, #868689);
+            --bg-light: #F5F7F8;
+            --bg-card: var(--color-white, #ffffff);
+            --border-color: rgba(51, 88, 211, 0.08);
             
-            /* Premium Depth Shadows - UPDATED TO BLUE ACCENTS */
-            --shadow-sm: 0 4px 20px rgba(11, 19, 42, 0.03);
-            --shadow-md: 0 20px 40px rgba(11, 19, 42, 0.04);
-            --shadow-lg: 0 30px 60px rgba(47, 91, 234, 0.12);
+            /* Premium Depth Shadows - Updated for global theme */
+            --shadow-sm: 0 4px 20px rgba(29, 29, 30, 0.03);
+            --shadow-md: 0 20px 40px rgba(29, 29, 30, 0.04);
+            --shadow-lg: 0 30px 60px rgba(51, 88, 211, 0.12);
             
             --radius-lg: 24px;
             --radius-md: 16px;
@@ -431,7 +444,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="template-card">
                         <div class="template-card-img-wrapper">
-                            <img src="assets/images/services/brownfield.jpg" alt="5-Step Brownfield Approach">
+                            <img loading="lazy" src="assets/images/services/brownfield.jpg" alt="5-Step Brownfield Approach">
                         </div>
                         <h4>5-Step Brownfield Approach</h4>
                         <p>For customers wishing to migrate existing systems "as-is", Prajai follows a standardized system copy process based on backup and restore protocols executed via a secure migration architecture.</p>
@@ -441,7 +454,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="template-card">
                         <div class="template-card-img-wrapper">
-                            <img src="assets/images/services/migration-server.jpg" alt="Dedicated Migration Server">
+                            <img loading="lazy" src="assets/images/services/migration-server.jpg" alt="Dedicated Migration Server">
                         </div>
                         <h4>Dedicated Migration Server</h4>
                         <p>To align with SAP's strict security policies, a dedicated Virtual Machine environment is provisioned with full OS/root access, ensuring clean execution isolated from secure production targets.</p>
@@ -451,7 +464,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="template-card">
                         <div class="template-card-img-wrapper">
-                            <img src="assets/images/services/server-specs.jpg" alt="Compute Infrastructure Allocation">
+                            <img loading="lazy" src="assets/images/services/server-specs.jpg" alt="Compute Infrastructure Allocation">
                         </div>
                         <h4>Engineered Architecture</h4>
                         <p>The standard-issue migration host is fully equipped with 32 vCPUs, 128 GB RAM, and 100 GB storage volumes tailored explicitly for heavy-duty provisioning software runtime operations.</p>
@@ -461,7 +474,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="template-card">
                         <div class="template-card-img-wrapper">
-                            <img src="assets/images/services/swpm-tool.jpg" alt="Software Provisioning Manager Overview">
+                            <img loading="lazy" src="assets/images/services/swpm-tool.jpg" alt="Software Provisioning Manager Overview">
                         </div>
                         <h4>Software Provisioning Manager</h4>
                         <p>SWPM acts as the central engine used to drive execution across installations, system copies, and structural landscape migrations for both ABAP and Java tech stacks.</p>
@@ -471,7 +484,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="template-card">
                         <div class="template-card-img-wrapper">
-                            <img src="assets/images/services/swpm-versions.jpg" alt="SWPM 1.0 vs SWPM 2.0 Compatibility">
+                            <img loading="lazy" src="assets/images/services/swpm-versions.jpg" alt="SWPM 1.0 vs SWPM 2.0 Compatibility">
                         </div>
                         <h4>SWPM 1.0 vs SWPM 2.0</h4>
                         <p>SWPM 1.0 covers classic structures based on SAP NetWeaver and earlier S/4HANA baselines. SWPM 2.0 is specifically engineered to power high-performance SAP NetWeaver ABAP systems on HANA databases.</p>
@@ -481,7 +494,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="template-card">
                         <div class="template-card-img-wrapper">
-                            <img src="assets/images/services/swpm-sum.jpg" alt="SWPM vs SUM DMO Tooling">
+                            <img loading="lazy" src="assets/images/services/swpm-sum.jpg" alt="SWPM vs SUM DMO Tooling">
                         </div>
                         <h4>Tooling Depth: SWPM vs SUM</h4>
                         <p>While SWPM manages provisioning actions like system replication, the Software Update Manager (SUM) with Database Migration Option (DMO) executes single-step application upgrades and database shifts.</p>
@@ -612,27 +625,29 @@
 
     <div id="footer-container"></div>
 
-    <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        fetch("navbar.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("navbar-container").innerHTML = data;
-                if (typeof $ !== "undefined") {
-                    $(".rts-mobile-menu-active").each(function () {
-                        $(this).metisMenu();
-                    });
-                }
-            })
-            .catch(error => console.error("Error loading header:", error));
-
-        fetch("footer.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("footer-container").innerHTML = data;
-            })
-            .catch(error => console.error("Error loading footer:", error));
-    });
-    </script>
+        <!-- Core Dynamic Component Scripts -->
+    <script defer src="assets/js/vendor/jquery.min.js"></script>
+    <script defer src="assets/js/plugins/bootstrap.min.js"></script>
+    <script defer src="assets/js/plugins/swiper.js"></script>
+    <script defer src="assets/js/plugins/isotop.js"></script>
+    <script defer src="assets/js/plugins/gsap.js"></script>
+    <script defer src="assets/js/plugins/split-text.js"></script>
+    <script defer src="assets/js/plugins/scroll-trigger.js"></script>
+    <script defer src="assets/js/plugins/smooth-scroll.js"></script>
+    <script defer src="assets/js/plugins/counterup.js"></script>
+    <script defer src="assets/js/vendor/jquery-ui.js"></script>
+    <script defer src="assets/js/vendor/magnifying-popup.js"></script>
+    <script defer src="assets/js/vendor/metismenu.js"></script>
+    <script defer src="assets/js/vendor/jarallax.js"></script>
+    <script defer src="assets/js/vendor/waypoints.js"></script>
+    <script defer src="assets/js/vendor/wow.js"></script>
+    <script defer src="assets/js/vendor/contact.form.js"></script>
+    <script defer src="assets/js/main.js"></script>
+    <script defer src="assets/js/footer.js"></script>
+<script defer src="assets/js/navbar.js"></script>
 </body>
 </html>
+
+
+
+

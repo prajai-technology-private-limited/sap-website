@@ -2,36 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GROW with SAP - Digital Transformation for SMBs</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="description" content="Prajai Technology | SAP Solutions & Software Development Company in Coimbatore">
+    <meta name="keywords" content="SAP, S/4HANA, ERP Solutions, Software Development, Prajai Technology, Coimbatore">
+    <meta name="robots" content="index, follow">
+    <!-- for open graph social media -->
+    <meta property="og:title" content="GROW with SAP | Prajai Technology">
+    <meta property="og:description"
+        content="Prajai Technology | SAP Solutions & Software Development Company in Coimbatore">
+    <!-- for twitter sharing -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="GROW with SAP | Prajai Technology">
+    <meta name="twitter:description"
+        content="Prajai Technology | SAP Solutions & Software Development Company in Coimbatore">
+    <!-- favicon -->
+    <link rel="icon" href="assets/images/prajai/favicon.png" type="image/x-icon">
+    <title>GROW with SAP | Prajai Technology</title>
+    
     <!-- Premium Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Vendor CSS -->
-    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/plugins/fontawesome-6.css">
-    
+
+    <link rel="stylesheet preload" href="assets/css/plugins/animate.min.css" as="style">
+    <link rel="stylesheet preload" href="assets/css/plugins/fontawesome-6.css" as="style">
+    <link rel="stylesheet preload" href="assets/css/plugins/swiper.min.css" as="style">
+    <link rel="stylesheet preload" href="assets/css/vendor/bootstrap.min.css" as="style">
+    <link rel="stylesheet preload" href="assets/css/vendor/jquery-ui.css" as="style">
+    <link rel="stylesheet preload" href="assets/css/vendor/magnific-popup.css" as="style">
+    <link rel="stylesheet preload" href="assets/css/vendor/metismenu.css" as="style">
+    <link rel="stylesheet preload" href="assets/css/vendor/jarallax.min.css" as="style">
+    <link rel="stylesheet preload" href="assets/fonts/flaticon_bokinn.css" as="style">
+    <link rel="stylesheet preload" href="assets/css/style.css" as="style">
+
     <style>
         /* ==========================================
            PREMIUM DESIGN SYSTEM & VARIABLES
         ========================================== */
         :root {
-            --brand-primary: #2f5bea;
-            --brand-secondary: #00d4ff;
-            --brand-gradient: linear-gradient(135deg, #2f5bea 0%, #00d4ff 100%);
-            --dark-surface: #0b132a; /* Deep luxury navy for headers */
-            --body-text: #4e5d78;    /* Professional slate-indigo for balanced legibility */
-            --bg-light: #f8faff;
-            --bg-card: #ffffff;
-            --border-color: rgba(47, 91, 234, 0.08);
+            --brand-primary: var(--color-primary, #3358D3);
+            --brand-secondary: var(--color-info, #1BA2DB);
+            --brand-gradient: linear-gradient(135deg, var(--color-primary, #3358D3) 0%, var(--color-info, #1BA2DB) 100%);
+            --dark-surface: var(--color-heading, #1D1D1E);
+            --body-text: var(--color-body, #868689);
+            --bg-light: #F5F7F8;
+            --bg-card: var(--color-white, #ffffff);
+            --border-color: rgba(51, 88, 211, 0.08);
             
-            /* Premium Depth Shadows */
-            --shadow-sm: 0 4px 20px rgba(11, 19, 42, 0.03);
-            --shadow-md: 0 20px 40px rgba(11, 19, 42, 0.04);
-            --shadow-lg: 0 30px 60px rgba(47, 91, 234, 0.12);
+            /* Premium Depth Shadows - Updated for global theme */
+            --shadow-sm: 0 4px 20px rgba(29, 29, 30, 0.03);
+            --shadow-md: 0 20px 40px rgba(29, 29, 30, 0.04);
+            --shadow-lg: 0 30px 60px rgba(51, 88, 211, 0.12);
             
             --radius-lg: 24px;
             --radius-md: 16px;
@@ -56,7 +78,7 @@
             min-height: 100vh;
             background: radial-gradient(circle at 85% 20%, rgba(0, 212, 255, 0.15) 0%, transparent 50%),
                         radial-gradient(circle at 15% 75%, rgba(47, 91, 234, 0.08) 0%, transparent 45%),
-                        linear-gradient(180deg, #f0f4ff 0%, #ffffff 100%);
+                        linear-gradient(180deg, #F5F7F8 0%, #ffffff 100%);
             padding-top: 160px;
             padding-bottom: 100px;
             display: flex;
@@ -319,7 +341,7 @@
         }
 
         .custom-matrix th {
-            background-color: #f4f7ff !important;
+            background-color: #F5F7F8 !important;
             color: var(--brand-primary) !important;
             font-weight: 700;
             padding: 22px 28px !important;
@@ -335,7 +357,7 @@
             padding: 24px 28px !important;
             color: var(--body-text);
             font-size: 15.5px;
-            border-bottom: 1px solid #eef2f7;
+            border-bottom: 1px solid #E6E6EB;
             transition: var(--transition-premium);
         }
 
@@ -344,7 +366,7 @@
         }
 
         .custom-matrix tr:hover td {
-            background-color: #f9fbfd;
+            background-color: #F5F7F8;
             color: var(--dark-surface);
         }
 
@@ -413,7 +435,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="hero-image-wrapper">
-                        <img src="assets/images/gallery/grow-hero.webp" alt="Conceptual Layout of GROW with SAP Operations" class="img-fluid">
+                        <img loading="lazy" src="assets/images/solutions/grow-with-sap.webp" alt="GROW with SAP for Midmarket Businesses" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -437,7 +459,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="template-card">
                         <div class="template-card-img-wrapper">
-                            <img src="assets/images/services/grow-overview.jpg" alt="GROW with SAP Overview Package">
+                            <img loading="lazy" src="assets/images/services/grow-overview.jpg" alt="GROW with SAP Overview Package">
                         </div>
                         <h4>What is GROW with SAP?</h4>
                         <p>Launched in March 2023, GROW with SAP is designed for small and medium-sized businesses (SMBs) aiming to move from traditional ERP systems to modern cloud-based solutions. It offers an end-to-end package that includes cloud ERP software, adoption services, community support, and learning resources to ensure a smooth and effective implementation.</p>
@@ -448,7 +470,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="template-card">
                         <div class="template-card-img-wrapper">
-                            <img src="assets/images/services/grow-overview.jpg" alt="Technical Framework Architecture">
+                            <img loading="lazy" src="assets/images/services/grow-overview.jpg" alt="Technical Framework Architecture">
                         </div>
                         <h4>The Technical Framework</h4>
                         <p>GROW with SAP brings together the public edition of SAP S/4HANA Cloud with adoption and acceleration services, preconfigured best practices, embedded AI and automation capabilities, and the SAP Business Technology Platform (BTP). With Accelerate for GROW with SAP, organizations can fast-track their cloud ERP deployment using a structured framework.</p>
@@ -459,7 +481,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="template-card">
                         <div class="template-card-img-wrapper">
-                            <img src="assets/images/services/public-cloud.jpg" alt="Strategic Cloud Operations Model">
+                            <img loading="lazy" src="assets/images/services/public-cloud.jpg" alt="Strategic Cloud Operations Model">
                         </div>
                         <h4>Strategic Cloud Model</h4>
                         <p>GROW with SAP is a strategic offering for organizations seeking a cloud ERP solution that can be deployed rapidly, securely, and cost-efficiently. It is exclusively available as a public cloud solution within this operating model, offering clear operational predictability and immediate scalability.</p>
@@ -470,7 +492,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="template-card">
                         <div class="template-card-img-wrapper">
-                            <img src="assets/images/services/public-cloud.jpg" alt="Public Cloud Infrastructure Topology">
+                            <img loading="lazy" src="assets/images/services/public-cloud.jpg" alt="Public Cloud Infrastructure Topology">
                         </div>
                         <h4>Public Cloud Environment</h4>
                         <p>In a public cloud environment, multiple customers share the same infrastructure and software, enabling easy scalability. The system is fully hosted and managed by SAP, reducing the need for extensive internal IT maintenance and allowing corporate teams to focus on standard growth objectives.</p>
@@ -481,7 +503,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="template-card">
                         <div class="template-card-img-wrapper">
-                            <img src="assets/images/services/ready-to-run.jpg" alt="Ready to Run Advantage Badging">
+                            <img loading="lazy" src="assets/images/services/ready-to-run.jpg" alt="Ready to Run Advantage Badging">
                         </div>
                         <h4>Ready-to-Run Advantages</h4>
                         <p>GROW with SAP leverages preconfigured best practices that can be adopted right away, making it easier to establish a fully functional ERP system in the public cloud. SAP describes this offering as a "ready-to-run cloud ERP solution" that cuts down on deployment friction and legacy system constraints.</p>
@@ -492,7 +514,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="template-card">
                         <div class="template-card-img-wrapper">
-                            <img src="assets/images/services/ready-to-run.jpg" alt="Target Audience Alignment Metric">
+                            <img loading="lazy" src="assets/images/services/ready-to-run.jpg" alt="Target Audience Alignment Metric">
                         </div>
                         <h4>Standardization & Fit</h4>
                         <p>It delivers a cloud ERP system that is ready to use, with a predictable and accelerated implementation process. It is ideal for mid-sized organizations, as well as small and medium-sized subsidiaries of larger enterprises, that are planning a transition to the cloud while prioritizing standardization.</p>
@@ -503,7 +525,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="template-card">
                         <div class="template-card-img-wrapper">
-                            <img src="assets/images/services/preconfigured.jpg" alt="Preconfigured Solution Workflow Icons">
+                            <img loading="lazy" src="assets/images/services/preconfigured.jpg" alt="Preconfigured Solution Workflow Icons">
                         </div>
                         <h4>Preconfigured Solutions</h4>
                         <p>Provides ready-made business processes built on industry best practices, enabling organizations to deploy the system quickly—typically within a modern, structured four to eight weeks timeline while keeping core operational structures clean.</p>
@@ -514,7 +536,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="template-card">
                         <div class="template-card-img-wrapper">
-                            <img src="assets/images/services/ai-integration.jpg" alt="Artificial Intelligence Integrations Visual">
+                            <img loading="lazy" src="assets/images/services/ai-integration.jpg" alt="Artificial Intelligence Integrations Visual">
                         </div>
                         <h4>Artificial Intelligence Integration</h4>
                         <p>The solution includes built-in embedded AI capabilities and smart data analytical insights that support better decision-making processes, streamline complex enterprise workflows, and intelligently support automation goals.</p>
@@ -525,7 +547,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="template-card">
                         <div class="template-card-img-wrapper">
-                            <img src="assets/images/services/low-code.jpg" alt="SAP Build Low Code Screen Mapping">
+                            <img loading="lazy" src="assets/images/services/low-code.jpg" alt="SAP Build Low Code Screen Mapping">
                         </div>
                         <h4>Low-Code Environment</h4>
                         <p>Using next-gen development tools such as SAP Build, business users can adapt, extend, and safely scale workflows with minimal coding or structural interference, making it easier to modify properties as specific market requirements shift over time.</p>
@@ -590,28 +612,29 @@
 
     <div id="footer-container"></div>
 
-    <!-- Core Dynamic Component Scripts -->
-    <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        fetch("navbar.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("navbar-container").innerHTML = data;
-                if (typeof $ !== "undefined") {
-                    $(".rts-mobile-menu-active").each(function () {
-                        $(this).metisMenu();
-                    });
-                }
-            })
-            .catch(error => console.error("Error loading header:", error));
-
-        fetch("footer.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("footer-container").innerHTML = data;
-            })
-            .catch(error => console.error("Error loading footer:", error));
-    });
-    </script>
+        <!-- Core Dynamic Component Scripts -->
+    <script defer src="assets/js/vendor/jquery.min.js"></script>
+    <script defer src="assets/js/plugins/bootstrap.min.js"></script>
+    <script defer src="assets/js/plugins/swiper.js"></script>
+    <script defer src="assets/js/plugins/isotop.js"></script>
+    <script defer src="assets/js/plugins/gsap.js"></script>
+    <script defer src="assets/js/plugins/split-text.js"></script>
+    <script defer src="assets/js/plugins/scroll-trigger.js"></script>
+    <script defer src="assets/js/plugins/smooth-scroll.js"></script>
+    <script defer src="assets/js/plugins/counterup.js"></script>
+    <script defer src="assets/js/vendor/jquery-ui.js"></script>
+    <script defer src="assets/js/vendor/magnifying-popup.js"></script>
+    <script defer src="assets/js/vendor/metismenu.js"></script>
+    <script defer src="assets/js/vendor/jarallax.js"></script>
+    <script defer src="assets/js/vendor/waypoints.js"></script>
+    <script defer src="assets/js/vendor/wow.js"></script>
+    <script defer src="assets/js/vendor/contact.form.js"></script>
+    <script defer src="assets/js/main.js"></script>
+    <script defer src="assets/js/footer.js"></script>
+<script defer src="assets/js/navbar.js"></script>
 </body>
 </html>
+
+
+
+
